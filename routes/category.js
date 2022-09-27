@@ -11,7 +11,7 @@ const router  = express.Router();
 
 //Teacher routes
 router.route('/').get(getAllCategory).post(createCategory);
-router.route('/:id').get(updateCategory).delete(deleteCategory).put(singleCategory).patch();
+router.route('/:id').get(singleCategory).delete(deleteCategory).put(updateCategory).patch();
 
 
 
